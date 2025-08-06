@@ -20,7 +20,7 @@ class BottomNavView extends StackedView<BottomNavViewModel> {
   ) {
     List<Widget> views = [
       const HomeView(),
-      const CalenderView(),
+    //  const CalenderView(),
       //  const PiorityView(),
       AITaskPlannerView(),
 
@@ -50,13 +50,13 @@ class BottomNavView extends StackedView<BottomNavViewModel> {
             ),
             label: "Home",
           ),
-          BottomNavigationBarItem(
-              icon: ResponsiveSvg(
-                "calendar",
-                size: 28,
-                color: viewModel.currentIndex == 1 ? kPrimaryColor : null,
-              ),
-              label: "Calender"),
+          // BottomNavigationBarItem(
+          //     icon: ResponsiveSvg(
+          //       "calendar",
+          //       size: 28,
+          //       color: viewModel.currentIndex == 1 ? kPrimaryColor : null,
+          //     ),
+          //     label: "Calender"),
           BottomNavigationBarItem(
               icon: Icon(Icons.auto_awesome,
                   size: 28,
